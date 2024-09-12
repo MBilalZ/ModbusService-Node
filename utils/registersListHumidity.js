@@ -1,0 +1,42 @@
+exports.allRegisters = [
+  {
+    Register_Address: 304,
+    Register_Length: 1,
+    Register_Name: 'MODBUS_HUMIDITY',
+    Operation: '03_06 Read Holding and Write Single',
+    Data_Format: '16 Bit Unsigned Integer',
+    Description: 'RH humidity',
+  },
+  {
+    Register_Address: 6,
+    Register_Length: 1,
+    Register_Name: 'MODBUS_ADDRESS',
+    Operation: '03_06 Read Holding and Write Single',
+    Data_Format: '8 Bit Unsigned Integer',
+    Description: 'Modbus device address',
+  },
+  {
+    Register_Address: 7,
+    Register_Length: 1,
+    Register_Name: 'MODBUS_PRODUCT_MODEL',
+    Operation: '03 Read Holding Registers (4x)',
+    Data_Format: '16 Bit Unsigned Integer',
+    Description: 'Prodouct model',
+  },
+  {
+    Register_Address: 15,
+    Register_Length: 1,
+    Register_Name: 'MODBUS_BAUDRATE',
+    Operation: '03_06 Read Holding and Write Single',
+    Data_Format: '8 Bit Unsigned Integer',
+    Description: '0=9600,1=19200,2=38400,3=57600,4=115200,5=76800',
+  },
+  {
+    Register_Address: 100,
+    Register_Length: 1,
+    Register_Name: 'MODBUS_TEMPERATURE_FAHRENHEIT',
+    Operation: '03 Read Holding Registers (4x)',
+    Data_Format: '16 Bit Unsigned Integer',
+    Description: 'Temperature at fahrenheit',
+  },
+];
